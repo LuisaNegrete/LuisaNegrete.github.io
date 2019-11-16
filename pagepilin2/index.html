@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Expo</title>
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon.ico">
+    <link type="text/css" href="css/jquery.pagepiling.css" rel="stylesheet">
+    <link type="text/css" href="css/estilos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  
+  <div id="pagepiling">
+      <div class="section home-area" id="home">
+         
+          <div class="wrapper">
+               
+                <nav>
+                    <img src="images/logo.png" alt="" class="logo">
+                    
+                  <ul id="myMenu">
+                      <li data-menuanchor="home" class="active" id="homeun"><a href="#home" class="botones">HOME</a></li>
+                      <li data-menuanchor="uno"><a href="#uno" class="botones">SKY EXPO</a></li>
+                      <li data-menuanchor="dos"><a href="#dos" class="botones">EARTH EXPO</a></li>
+                      <li data-menuanchor="tres"><a href="#tres" class= "botones">AQUA EXPO</a></li>
+                      <li data-menuanchor="form"><a href="#form" class="botones">INSCRIPCIÓN</a></li>
+                  </ul>
+              </nav>
+              
+              <div class="banner-area">
+                  <h1 class="tithome">ANIMAL EXPO <br> EN BOGOTÁ</h1>
+                  <p class="texthome">Este 19 de Marzo, en el Museo Nacional <br> se llevará a cabo la más grande exposición de fotografía animal.</p>
+              </div>
+              
+            
+              
+          <div class="barrasoci">    
+            <ul>
+                <li class="lisocial"><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="" class="socialogo"></a></li>
+                  <li class="lisocial"><a href="https://twitter.com/?lang=es"><img src="images/twitter-02.png" alt="" class="socialogo"></a></li>
+                  <li class="lisocial"><a href="https://www.instagram.com/?hl=es-la"><img src="images/instagram.png" alt="" class="socialogo"></a></li>
+                    <li class="lisocial"><a href="https://www.tumblr.com/"><img src="images/tumblr2-02.png" alt="" class="socialogo"></a></li>
+                  
+                  
+                
+              </ul>
+      </div>
+              
+              
+                </div>
+              
+              
+      </div>
+     
+     
+      <div class="section uno-area" id="uno">
+          <div class="wrapper">
+                 <div class="skybanner">
+                  
+                  <div class="titsky">
+                  <h1>SKY <br> EXPO</h1></div>
+                  
+                  <div class="moresky">
+                     <span class="nota"><p>Especies fotografiadas desde las zonas de Bakaramon y Teztha</p></span>
+                      <div><img src="images/mapa%20africa-03.png" alt="" class="mapa"></div>
+                  </div>
+                  
+                  <div class="textsky">
+                  <p>Más de 579 fotografías, 10 esculturas y 50 vídeos de las especies de aves más hermosas e increíbles del mundo que hacen parte de la gran investigación de Martín Nosequien Fulanito. </p>
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+    
+      
+      <div class="section dos-area" id="dos">
+          <div class="wrapper">
+        
+              <h3 class="titearth">EARTH <br>EXPO</h3>
+              
+              <div class="textearth">
+                  <p> <b>¿Sabias que existen más de 1749 especies de animales terrestres? </b><br> <br>Probablemente no tengas un repertorio mental de esa cantidad de animales en la cabeza, pero en <i>"Earth Expo"</i> te ayudaremos a que les des un vistazo por medio de la fotografía, vídeo, exposiciones y escultura. </p>
+              </div>
+              
+              <div class="bottomverlist">
+                  <h2><a href="#" class="verlista">Ver lista</a></h2>
+              </div>
+              
+          </div>
+      </div>
+      
+      <div class="section tres-area" id="tres">
+          <div class="wrapper">
+            
+                 <div class="tita"><h1>AQUA EXPO</h1></div>
+                  <h3 class="subaqua">En el que podrás encontrar 3 tipos de especies para observar:</h3>
+                  
+             <div class="barramar">
+                 <ul>
+                     <li class="iconomar"><a href="#"><img src="images/clown-fish.png" alt="" class="iconmar"></a></li>
+                      <li class="iconomar"><a href="#"><img src="images/crab.png" alt="" class="iconmar"></a></li>
+                        <li class="iconomar"><a href="#"><img src="images/starfish.png" alt="" class="iconmar"></a></li>
+                 </ul>
+             </div>
+              
+          </div>
+      </div>
+      
+      <div class="section formarea" id="form">
+          <div class="wrapper">
+              <div class="titform"><h3>INSCRIPCIÓN PARA ASISTIR A ANIMAL EXPO</h3> <p>Los cupos son limitados</p></div>
+              
+         
+          
+          <form class="formreg" action="">
+             
+              <input class="input" type="text" placeholder="Nombre" required autofocus>
+                <input class="input" type="email" placeholder="E-mail" required>
+                  <input class="input" type="tel" placeholder="Celular" required>
+                  
+                  <div class="botonform">
+                      <input class="btenviar" type="submit" value="Inscribirse">
+                  </div>
+          </form>
+           </div>
+      </div>
+  
+    </div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.pagepiling.min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+	$('#pagepiling').pagepiling({
+        anchors: ['home', 'uno', 'dos', 'tres', 'form'],
+    menu: '#myMenu',
+       loopBottom:['true'],
+        navigation:{
+            'textColor': '#ffffff',
+            'bulletsColor':'#ff8900',
+            'position':'right',
+            'tooltips':['Home', 'Sky', 'Earth', 'Aqua', 'Inscripción'],
+        }
+    });
+        
+});
+    </script>
+    
+</body>
+</html>
